@@ -65,36 +65,36 @@ static const char unknown_str[] = "n/a";
  */
 static const struct arg args[] = {
     /* function format          argument */
-    { run_command,  "%2s ", "cpuicon.sh " },
+    { run_command,  "%2s ", "cpuicon " },
     // { cpu_perc, "%s%% • ", NULL },
     { cpu_perc, "%s%% ", NULL },
 
-    { run_command,  "%2s ", "memicon.sh"  },
+    { run_command,  "%2s ", "memicon"  },
     // { ram_perc, "%s%% • ", NULL },
     { ram_perc, "%s%% ", NULL },
 
-    // { run_command,  "%2s ", "homeicon.sh" },
+    // { run_command,  "%2s ", "homeicon" },
     // { disk_perc,    "%s%% • ", "/home/selan/" },
-    /*  { run_command,  "^c#c5c8c6^ %2s ", "hdd.sh" },   */
+    /*  { run_command,  "^c#c5c8c6^ %2s ", "hdd" },   */
 
-    // { run_command,  "%2s ", "netspeed.sh" },
-    // // { run_command,  " %2s ", "neticon.sh" },
-    // // { run_command,  "%2s • ", "netspeed.sh" },
-    // // { run_command,  " %2s ", "ip.sh" },
-    // // { run_command,  " %2s ", "vpnicon.sh" },
+    // { run_command,  "%2s ", "netspeed" },
+    // // { run_command,  " %2s ", "neticon" },
+    // // { run_command,  "%2s • ", "netspeed" },
+    // // { run_command,  " %2s ", "ip" },
+    // // { run_command,  " %2s ", "vpnicon" },
 
-    // { run_command,  "%s ", "volicon.sh " },
-    // { run_command,  "%s • ", "vol.sh " },
-    { run_command,  "%s ", "vol.sh " },
+    // { run_command,  "%s ", "volicon},
+    // { run_command,  "%s • ", "vol " },
+    { run_command,  "%s ", "vol " },
 
-    // { run_command,  "^c#c5c8c6^ %2s ", "forecast.sh " },
-    // { run_command,  "^c#cc6666^ %2s ", "tempicon.sh " },
-    // { run_command,  "^c#c5c8c6^ %2s ", "temp.sh " },
-    // { run_command,  "%2s • ", "battery.sh " },
-    { run_command,  "%2s ", "battery.sh " },
+    // { run_command,  "^c#c5c8c6^ %2s ", "forecast " },
+    // { run_command,  "^c#cc6666^ %2s ", "tempicon " },
+    // { run_command,  "^c#c5c8c6^ %2s ", "temp " },
+    // { run_command,  "%2s • ", "battery " },
+    { run_command,  "%2s ", "battery " },
 
 
-    { run_command,  "· %2s", "clock.sh" },
+    { run_command,  "· %2s", "clock" },
 	// { datetime, "%s",           "%a-%b-%d %H:%M" },
 
 };
