@@ -85,7 +85,7 @@ static const struct arg args[] = {
 
     // { run_command,  "%s ", "volicon},
     // { run_command,  "%s • ", "vol " },
-    { run_command,  "%s ", "vol " },
+    { run_command,  "%s ", "vol_show " },
 
     // { run_command,  "^c#c5c8c6^ %2s ", "forecast " },
     // { run_command,  "^c#cc6666^ %2s ", "tempicon " },
