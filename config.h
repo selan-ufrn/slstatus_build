@@ -67,11 +67,11 @@ static const struct arg args[] = {
     /* function format          argument */
     { run_command,  "%2s ", "cpuicon " },
     // { cpu_perc, "%s%% • ", NULL },
-    { cpu_perc, "%s%% ", NULL },
+    { cpu_perc, "%2s%% ", NULL },
 
     { run_command,  "%2s ", "memicon"  },
     // { ram_perc, "%s%% • ", NULL },
-    { ram_perc, "%s%% ", NULL },
+    { ram_perc, "%2s%% ", NULL },
 
     // { run_command,  "%2s ", "homeicon" },
     // { disk_perc,    "%s%% • ", "/home/selan/" },
@@ -94,7 +94,8 @@ static const struct arg args[] = {
     { run_command,  "%2s ", "battery " },
 
 
-    { run_command,  "· %2s", "clock" },
+    // { run_command,  "· %2s", "clock" },
+    { run_command,  "· %2s ·", "clock" },
 	// { datetime, "%s",           "%a-%b-%d %H:%M" },
 
 };
