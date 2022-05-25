@@ -95,7 +95,7 @@ static const struct arg args[] = {
 
 
     // { run_command,  "· %2s", "clock" },
-    { run_command,  "· %2s ·", "clock" },
+    { run_command,  "· %2s", "clock" },
 	// { datetime, "%s",           "%a-%b-%d %H:%M" },
 
 };
