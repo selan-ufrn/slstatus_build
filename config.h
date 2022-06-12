@@ -4,7 +4,7 @@
 const unsigned int interval = 1000;
 
 /* text to show if no value can be retrieved */
-static const char unknown_str[] = "n/a";
+static const char unknown_str[] = "-";
 
 /* maximum output string length */
 #define MAXLEN 2048
@@ -65,12 +65,12 @@ static const char unknown_str[] = "n/a";
  */
 static const struct arg args[] = {
     /* function format          argument */
-    { run_command,  "%2s ", "cpuicon " },
+    { run_command,  "^C4^%2s ", "cpuicon " },
     // { cpu_perc, "%s%% • ", NULL },
     { cpu_perc, "%2s%% ", NULL },
 
     { run_command,  "%2s ", "memicon"  },
-    // { ram_perc, "%s%% • ", NULL },
+    // { ram_perc, "%s%%  ", NULL },
     { ram_perc, "%2s%% ", NULL },
 
     // { run_command,  "%2s ", "homeicon" },
@@ -79,7 +79,7 @@ static const struct arg args[] = {
 
     // { run_command,  "%2s ", "netspeed" },
     // // { run_command,  " %2s ", "neticon" },
-    // // { run_command,  "%2s • ", "netspeed" },
+    // // { run_command,  "%2s  •", "netspeed" },
     // // { run_command,  " %2s ", "ip" },
     // // { run_command,  " %2s ", "vpnicon" },
 
@@ -91,11 +91,16 @@ static const struct arg args[] = {
     // { run_command,  "^c#cc6666^ %2s ", "tempicon " },
     // { run_command,  "^c#c5c8c6^ %2s ", "temp " },
     // { run_command,  "%2s • ", "battery " },
-    { run_command,  "%2s ", "battery " },
+    // { run_command,  "^c#a1c8c6^%2s^d^ • ", "battery " },
+    { run_command,  "%2s • ", "battery " },
 
+    { wifi_perc, "^C5^ %3s%% ", "wlan0"},
+    { wifi_essid, "[%s] | ", "wlan0"},
+    { run_command,  "%2s ", "neticon" },
+    { run_command,  "%s • ", "netspeed" },
 
+    { run_command,  "^C6^%s | ", "weatherbar" },
     // { run_command,  "· %2s", "clock" },
-    { run_command,  "· %2s", "clock" },
+    { run_command,  "%2s", "clock" },
 	// { datetime, "%s",           "%a-%b-%d %H:%M" },
-
 };
