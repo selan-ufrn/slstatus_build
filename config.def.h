@@ -99,8 +99,7 @@ static const struct arg args[] = {
     { run_command,  "%2s ", "neticon" },
     { run_command,  "%s • ", "netspeed" },
 
-    { run_command,  "^C6^%s | ", "weatherbar" },
-    // { run_command,  "· %2s", "clock" },
-    { run_command,  "%2s", "clock" },
+    // { run_command,  "^C6^%s | ", "weatherbar" },
+    { run_command,  "^C6^%2s", "clock" },
 	// { datetime, "%s",           "%a-%b-%d %H:%M" },
 };
