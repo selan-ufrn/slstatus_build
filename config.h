@@ -65,7 +65,7 @@ static const char unknown_str[] = "-";
  */
 static const struct arg args[] = {
     /* function format          argument */
-    { run_command,  "^C4^%2s ", "cpuicon " },
+    { run_command,  "^C1^%2s ", "cpuicon " },
     // { cpu_perc, "%s%% • ", NULL },
     { cpu_perc, "%2s%% ", NULL },
 
@@ -94,12 +94,12 @@ static const struct arg args[] = {
     // { run_command,  "^c#a1c8c6^%2s^d^ • ", "battery " },
     { run_command,  "%2s • ", "battery " },
 
-    { wifi_perc, "^C5^ %3s%% ", "wlan0"},
+    { wifi_perc, "^C2^ %3s%% ", "wlan0"},
     { wifi_essid, "[%s] | ", "wlan0"},
     { run_command,  "%2s ", "neticon" },
     { run_command,  "%s • ", "netspeed" },
 
     // { run_command,  "^C6^%s | ", "weatherbar" },
-    { run_command,  "^C6^%2s", "clock" },
+    { run_command,  "^C3^%2s", "clock" },
 	// { datetime, "%s",           "%a-%b-%d %H:%M" },
 };
